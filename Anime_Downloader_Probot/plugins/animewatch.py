@@ -77,8 +77,8 @@ async def download(event):
  for i in result:
   if i != "title":
    k = Button.url(f"{i}", f"{result[i]}")
-   butons.append(k)
-   if len(butons) == 1:
-    cbutton.append(butons)
-    butons = []
+   buttons.append(k)
+   if len(buttons) == 1:
+    cbutton.append(buttons)
+    buttons = []
  await event.edit(text, buttons=cbutton)
