@@ -81,4 +81,4 @@ async def download(event):
    if len(buttons) == 1:
     cbutton.append(buttons)
     buttons = []
- await event.edit(text, buttons=cbutton)
+ await event.reply(text, buttons=cbutton)
