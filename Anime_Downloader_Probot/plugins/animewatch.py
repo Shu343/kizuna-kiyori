@@ -63,7 +63,7 @@ async def episode(event):
  await event.edit(text, buttons=cbutton)
 
 @GogoAnime.on(events.CallbackQuery(pattern="download(\_(.*))"))
-async def episode(event):
+async def download(event):
  tata = event.pattern_match.group(1)
  data = tata.decode()
  input = data.split("_", 1)[1]
