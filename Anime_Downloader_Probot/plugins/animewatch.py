@@ -72,7 +72,7 @@ async def episode(event):
  epsd = imd.strip()
  result = anime.get_episodes_link(animeid, epsd)
  text = "You are watching Episode {} of {}:\n\nNote: Select HDP link for faster streaming.".format(epsd, animeid)
- butons = []
+ buttons = []
  cbutton = []
  for i in result:
   if i != "title":
